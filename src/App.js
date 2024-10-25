@@ -65,10 +65,16 @@ function App() {
           </div>
         </div>
         <div className="chatFooter">
-          <input placeholder="Send a message" className="input" />
-          <button className="send">
-            <img src={send} alt="" />
-          </button>
+          <div className="inp">
+            <input placeholder="Send a message" />
+            <button className="send">
+              <img src={send} alt="send" />
+            </button>
+          </div>
+          <p>
+            ChatGPT may produce incorrect information about people,places or
+            facts. Chatgpt August 20 version.
+          </p>
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@ html {
 body {
   background-color: rgb(3, 0, 31);
   color: white;
+  font-family: cursive;
 }
 
 .App {
@@ -109,6 +110,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 6rem 10rem;
+  margin-bottom: 0;
 }
 
 .chatFooter {
@@ -118,4 +120,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.inp {
+  padding: 0.5rem;
+  background-color: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  width: 70rem;
+  border-radius: 0.5rem;
+}
+.inp > input {
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+.send {
+  background-color: transparent;
+  border: none;
+}
+
+.chatFooter p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
 }
