@@ -48,19 +48,29 @@ function App() {
       <div className="main">
         <div className="chats">
           <div className="chat">
-            <img src={userIcon} alt="user" />
+            <img className="chatImg" src={userIcon} alt="user" />
             <p className="txt">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Distinctio pariatur dolore deserunt non corrupti sapiente nemo
               dolores cupiditate nisi incidunt.
             </p>
           </div>
-          <div className="chat">
-            <img src={gptLogoIcon} alt="gpt" />
+          <div className="chat bot">
+            <img className="chatImg" src={gptLogoIcon} alt="gpt" />
             <p className="txt">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Distinctio pariatur dolore deserunt non corrupti sapiente nemo
-              dolores cupiditate nisi incidunt.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae est, earum id cum ea commodi, saepe tempora ut
+              perspiciatis, nesciunt in autem repellat tenetur minus
+              repellendus. Ratione, voluptatem? Magnam asperiores sit voluptates
+              architecto? Cupiditate porro id vitae veritatis, fugiat molestiae
+              reprehenderit exercitationem atque, repudiandae in nostrum
+              voluptatibus illum? Obcaecati consequuntur reprehenderit hic,
+              enim, voluptates eos aliquid recusandae adipisci repellat eveniet
+              id dolorem dolorum maxime impedit veritatis ipsum officia nobis
+              nihil laborum sed nemo deleniti? Dolorum ratione, laboriosam
+              distinctio delectus officiis aperiam, rerum similique sunt est
+              perferendis laudantium recusandae error. Tenetur sunt temporibus
+              exercitationem quisquam nulla dignissimos ea. Vel, quisquam quae!
             </p>
           </div>
         </div>

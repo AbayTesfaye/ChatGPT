@@ -113,6 +113,33 @@ body {
   margin-bottom: 0;
 }
 
+.chats {
+  overflow: hidden;
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bot {
+  background-color: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+.chatImg {
+  width: 3rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
 .chatFooter {
   margin-top: auto;
   width: 100%;
@@ -127,7 +154,7 @@ body {
   background-color: rgba(28, 30, 58, 1);
   display: flex;
   align-items: center;
-  width: 70rem;
+  width: 68rem;
   border-radius: 0.5rem;
 }
 .inp > input {
