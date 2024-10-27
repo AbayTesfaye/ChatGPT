@@ -8,7 +8,7 @@ const configuration = new Configuration({
 // Create an instance of the OpenAIApi using the configuration
 const openai = new OpenAIApi(configuration);
 
-// Now you can use the `openai` instance to make API requests, like this:
+// Now you can use the openai instance to make API requests, like this:
 export async function sendMsgToOpenAI(message) {
   const response = await openai.createCompletion({
     model: "text-davinci-003",

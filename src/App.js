@@ -9,9 +9,13 @@ import send from "./assets/send.svg";
 import userIcon from "./assets/user-icon.png";
 import gptLogoIcon from "./assets/chatgptLogo.svg";
 import { sendMsgToOpenAI } from "./openai";
+import { useState } from "react";
 function App() {
-  const handleSend = () => {
-    const res = sendMsgToOpenAI();
+  const [input, setInput] = useState("");
+  console.log(input);
+  const handleSend = async () => {
+    const res = await sendMsgToOpenAI(input);
+    console.log(res);
   };
   return (
     <div className="App">
@@ -80,9 +84,13 @@ function App() {
         </div>
         <div className="chatFooter">
           <div className="inp">
-            <input placeholder="Send a message" />
+            <input
+              placeholder="Send a message"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
             <button className="send">
-              <img src={send} alt="send" />
+              <img src={send} alt="send" onClick={handleSend} />
             </button>
           </div>
           <p>
