@@ -8,7 +8,11 @@ import rocket from "./assets/rocket.svg";
 import send from "./assets/send.svg";
 import userIcon from "./assets/user-icon.png";
 import gptLogoIcon from "./assets/chatgptLogo.svg";
+import { sendMsgToOpenAI } from "./openai";
 function App() {
+  const handleSend = () => {
+    const res = sendMsgToOpenAI();
+  };
   return (
     <div className="App">
       <div className="sideBar">
